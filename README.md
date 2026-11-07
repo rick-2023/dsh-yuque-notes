@@ -116,4 +116,4 @@ node --check client.js
 
 ## License
 
-MIT
+[MIT](./LICENSE)
