@@ -1,0 +1,53 @@
+{
+  "name": "@local/yuque-notes",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DeepSeek Harness plugin: publish to Yuque Notes from the composer dock, selection quick-capture, and /yuque-note",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rick-2023/dsh-yuque-notes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rick-2023/dsh-yuque-notes/issues"
+  },
+  "homepage": "https://github.com/rick-2023/dsh-yuque-notes#readme",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "yuque",
+    "notes",
+    "cordis",
+    "plugin"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "yuque-bird.png",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}

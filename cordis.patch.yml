@@ -1,0 +1,3 @@
+- insert:
+    - id: yuque-notes
+      name: '@local/yuque-notes'
