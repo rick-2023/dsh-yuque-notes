@@ -1,0 +1,7 @@
+url: https://github.com/rick-2023/dsh-yuque-notes
+name: rick-2023/dsh-yuque-notes
+category: workflow
+description:
+  en: Publishes selected chat text and notes to Yuque Notes from the composer dock, a selection quick-capture button, and /yuque-note without a Yuque Token.
+  zh: 在 DeepSeek Harness 中把选中的对话内容和手写小记发到语雀小记，支持输入框旁入口、选区快捷记录与 /yuque-note，无需语雀 Token。
+icon: https://raw.githubusercontent.com/rick-2023/dsh-yuque-notes/main/assets/icon-180.png

@@ -1,9 +1,9 @@
 {
-  "name": "@local/yuque-notes",
+  "name": "dsh-yuque-notes",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "type": "module",
-  "description": "DeepSeek Harness plugin: publish to Yuque Notes from the composer dock, selection quick-capture, and /yuque-note",
+  "description": "Publish selected chat text and notes to Yuque Notes from DeepSeek Harness.",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -16,6 +16,7 @@
   "keywords": [
     "deepseek-harness",
     "dsh",
+    "dsh-plugin",
     "yuque",
     "notes",
     "cordis",
@@ -34,11 +35,15 @@
     "locale/*.json",
     "icon.svg",
     "yuque-bird.png",
+    "assets",
+    "screenshots.json",
     "README.md",
     "LICENSE"
   ],
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "immediately": true,

@@ -21,21 +21,21 @@ DeepSeek Harness（DSH）插件：把内容发到 **语雀小记**。
 
 ## 安装
 
-### 方式一：从本地目录安装（推荐开发/自用）
+### 方式一：从 GitHub 安装
 
-1. 克隆仓库：
+```bash
+dsh plugin --profile <profile> add github:rick-2023/dsh-yuque-notes
+```
+
+收录进 [dshmarket.com](https://dshmarket.com/) / awesome-dsh-plugin 后，也可在 **Plugins → Plugin Market / Discover** 搜索 `dsh-yuque-notes` 一键安装。详见 [MARKET.md](./MARKET.md)。
+
+### 方式二：本地目录安装（开发/自用）
 
 ```bash
 git clone https://github.com/rick-2023/dsh-yuque-notes.git
 ```
 
-2. 在 DeepSeek Harness 中安装该目录为 Bundle（由 Agent / 插件管理安装本地包），目标路径指向克隆后的目录。
-
-3. 确认插件已启用后，**刷新 Web GUI 页面**。
-
-### 方式二：继续使用当前 workspace 副本
-
-若你是在 `default-workspace/yuque-notes-plugin` 里开发的，可直接对该目录执行本地 Bundle 安装；本仓库用于备份与分享同一份代码。
+然后在 DeepSeek Harness 中把该目录安装为 Bundle，启用后 **刷新 Web GUI 页面**。
 
 ## 使用说明
 
